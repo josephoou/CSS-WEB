@@ -1,0 +1,286 @@
+@media all{
+  *{padding:0;
+      margin: 0;}
+  
+    header{
+        height: 90px;
+        width: 100%;
+        background-image: linear-gradient(to right,red,white );
+    } 
+    header a{
+      color: black ;
+    }
+  #logobox{
+      width: 30%;
+      height: 100%;
+      float: left;
+  }
+  #h1header{
+     -webkit-text-stroke: thin white;
+     
+      color:black;
+      float: right;
+      line-height: 90px;
+      padding: 0 10px;
+  }
+  #logo{
+      height: 100%;
+      border-radius: 30%;
+  }
+  nav{
+    width: 70%;
+    text-align: center;
+    float: left;
+    
+  }
+  
+  nav a{
+    font-size: 6mm;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  display: inline-block;
+   
+  }
+  nav li{
+    display: inline-block;
+    line-height: 90px;
+    width:150px ;
+    text-align: center;
+  }
+  
+  nav a:hover{
+    background-color: white;
+    height: 90%;
+    width: 100%;
+  }
+  main{
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+    border-top: 3px solid black;
+    animation-name: backcolor ;
+    animation-duration: 3s ;
+    animation-iteration-count: 3 ;
+  }
+  aside{
+    width: 30%;
+    height:100% ;
+    background-image: linear-gradient(to left,red,white );
+    text-align: center;
+    float: right;
+    font-family: 'Indie Flower', cursive;
+  
+  
+  }
+  #web-dev{
+    width: 90%;
+    height: 35%;
+  }
+   
+  
+  
+  #h1aside{
+    padding: 20px 0;
+    border-bottom: 3px solid black;
+  }
+  #article{
+  
+    width: 70%;
+    height: 450px;
+    position: relative;
+    
+  }
+  
+  #box{
+    padding:15px ;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    background-image: linear-gradient(to right,red,white );
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  #box h1{
+    border-bottom: 3px solid rgb(255, 0, 221);
+    padding: 10px 0;
+  }
+  #box p{
+    text-align: justify;
+  }
+  #social-media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+  }
+  
+  #social-media img{
+    width: 50px;
+    border-bottom: 2px double black ;
+    padding-bottom: 5px;
+  
+  }
+  
+  #social-media img:hover{
+    width: 100px;
+    border-bottom: 2px solid white;
+  
+  }
+
+  #button1{
+    
+    width:100%;
+font-size: 4mm;
+    padding: 5px 20px;
+    background-image: linear-gradient( to right, #df199d 0%, #faf600 100%);
+    color: white;
+    font-weight: bold;
+    border-radius: 80px;
+    cursor: pointer;
+    outline: 0px;
+     margin: 3px 0px;
+     animation-name: checkcolor ;
+     animation-duration: 1s ;
+     animation-iteration-count: infinite ;
+ }
+footer img{
+  margin: 2px 380px;
+  width: 30%;
+  border-radius: 80%;
+  border: 2px solid black;
+
+
+ }
+
+  
+
+
+
+ 
+  @keyframes backcolor{
+     0%{
+  background-image: linear-gradient(to left,red,white ) ;
+     }
+     50%{
+      background-image: linear-gradient(to right,red,white ) ;
+     }
+     100%{
+      background-image: linear-gradient(to left,red,white ) ;
+     }
+         }
+
+
+         @keyframes checkcolor{
+          0%{
+            background-image: linear-gradient( to right, #df199d 0%, #faf600 100%);
+          }
+          50%{
+            background-image: linear-gradient( to left, #df199d 0%, #faf600 100%);
+          }
+          100%{
+            background-image: linear-gradient( to right, #df199d 0%, #faf600 100%);
+          }
+        }
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media print{
+  aside{
+    display: none;
+  }
+  nav{display: none;}
+}
+@media only screen and (max-width:1070px)
+{
+  aside {
+    width: 35%;
+}
+  #logobox{
+    width: 30%;
+  }
+  #article {
+    width: 65%;
+}
+  
+}
+@media only screen and (max-width:801px){
+  #logobox{
+    width: 30%;
+  }
+}
+@media only screen and (max-width:500px){
+  header, main{
+    height: auto;
+    
+  }
+  #logobox{
+    width: 100%;
+    text-align: center;
+  }
+  #h1header, #logo{
+    float:none;
+  }
+  span a{
+    text-decoration: none;
+
+  }
+  nav{
+    width:100% ;
+
+  }
+  aside{
+    
+    width: 100%;
+  }
+  #article{
+    height: 300px;
+    width: 100%; 
+  }
+}
+@media only screen and (max-width:800px){
+  nav li{
+    display: block;
+    width: 100%;
+  }
+  article{
+    display:inline-flex;
+    width: auto;
+    height: auto;
+  }
+  footer img{
+    margin:  7%;
+    width: 80%;
+      
+    
+    
+   
+   
+   
+   }
+  
+
+}
+@media only screen and (orientation:portrait)and (max-width:500px)
+{
+}
